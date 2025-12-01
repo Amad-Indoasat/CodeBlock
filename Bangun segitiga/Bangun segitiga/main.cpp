@@ -11,7 +11,6 @@ int main() {
     cout << "2. Kiri Bawah\n";
     cout << "3. Kanan Atas\n";
     cout << "4. Kanan Bawah\n";
-    cout << "5. Segitiga Sama Sisi\n";
     cout << "Pilihan: ";
     cin >> arah;
 
@@ -53,21 +52,6 @@ int main() {
                 cout << " ";
             for (int j = 1; j <= i; j++)
                 cout << "+";
-            cout << endl;
-        }
-    }
-
-    // Arah 5: Segitiga Sama Sisi
-    else if (arah == 5) {
-        for (int i = 1; i <= t; i++) {
-            // Spasi kiri
-            for (int s = 0; s < t - i; s++)
-                cout << " ";
-
-            // Cetak +
-            for (int j = 1; j <= 2*i - 1; j++)
-                cout << "+";
-
             cout << endl;
         }
     }
